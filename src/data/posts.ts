@@ -147,7 +147,7 @@ export const posts: BlogPost[] = [
     category: 'make-money-online',
     date: '2026-01-12',
     readTime: '15 min read',
-    image: '/images/chatgpt-earn.jpg',
+    image: 'https://image.pollinations.ai/prompt/How to Earn $100/Day Using ChatGPT: Complete Beginner Guide for 2026}',
     imageAlt: 'Person earning money online using ChatGPT on laptop',
     tags: ['ChatGPT', 'Make Money Online', 'AI Tools', 'Beginner Guide', 'Freelancing'],
     excerpt: 'Want to earn $100/day with ChatGPT? This complete beginner guide reveals 7 proven methods, exact prompts, and platforms where you can start earning today.',
