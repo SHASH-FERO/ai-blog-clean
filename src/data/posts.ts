@@ -483,7 +483,7 @@ export const posts: BlogPost[] = [
     category: 'ai-tools',
     date: '2026-01-05',
     readTime: '11 min read',
-    image: `https://image.pollinations.ai/prompt/Free AI Website Builders That Actually Work in 2026: Build Your Site in Minutes}`,
+    image: `https://image.pollinations.ai/prompt/FreeAIWebsiteBuildersThatActuallyWorkin2026:BuildYourSiteinMinutes}`,
     imageAlt: 'AI website builder creating professional websites automatically',
     tags: ['AI Tools', 'Website Builders', 'Free Tools', 'No-Code', '2026'],
     excerpt: 'Build a professional website in minutes with these free AI website builders. No coding required — just describe what you want and let AI do the rest.',
