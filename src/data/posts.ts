@@ -1,4 +1,4 @@
-import { title } from "process";
+
 
 export interface PostContent {
   type: 'h2' | 'h3' | 'p' | 'ul' | 'ol' | 'blockquote' | 'cta' | 'faq' | 'ad';
@@ -483,7 +483,7 @@ export const posts: BlogPost[] = [
     category: 'ai-tools',
     date: '2026-01-05',
     readTime: '11 min read',
-    image: `https://image.pollinations.ai/prompt/${encodeURIComponent(title)}`,
+    image: `https://image.pollinations.ai/prompt/Free AI Website Builders That Actually Work in 2026: Build Your Site in Minutes}`,
     imageAlt: 'AI website builder creating professional websites automatically',
     tags: ['AI Tools', 'Website Builders', 'Free Tools', 'No-Code', '2026'],
     excerpt: 'Build a professional website in minutes with these free AI website builders. No coding required — just describe what you want and let AI do the rest.',
