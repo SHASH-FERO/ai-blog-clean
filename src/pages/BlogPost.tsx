@@ -245,7 +245,7 @@ export default function BlogPost() {
                           src={related.image}
                           alt={related.imageAlt}
                           className="w-20 h-20 object-cover rounded-lg shrink-0"
-                          loading="eager"
+                         
                         />
                         <div>
                           <h4 className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2 leading-snug">
