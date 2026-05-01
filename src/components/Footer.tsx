@@ -32,7 +32,7 @@ export default function Footer() {
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="mailto:hello@earnwithai.com" className="p-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors">
+              <a href="mailto:ferocious2006@gmai.com" className="p-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors">
                 <Mail className="w-4 h-4" />
               </a>
             </div>

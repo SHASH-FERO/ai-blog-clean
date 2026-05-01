@@ -20,7 +20,7 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
               src={post.image}
               alt={post.imageAlt}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              loading="lazy"
+              loading="eager"
             />
             <div className="absolute top-4 left-4">
               <span className="px-3 py-1 text-xs font-semibold bg-blue-600 text-white rounded-full">
@@ -62,7 +62,7 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
           src={post.image}
           alt={post.imageAlt}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          loading="lazy"
+          loading="eager"
         />
         <div className="absolute top-3 left-3">
           <span className="px-2.5 py-1 text-xs font-semibold bg-white/90 backdrop-blur-sm text-gray-800 rounded-full">

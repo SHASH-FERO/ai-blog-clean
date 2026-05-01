@@ -66,11 +66,11 @@ img {
   transition: opacity 0.3s ease;
 }
 
-img[loading="lazy"] {
+img[loading="eager"] {
   opacity: 0;
 }
 
 img[loading="lazy"].loaded,
-img:not([loading="lazy"]) {
+img:not([loading="eager"]) {
   opacity: 1;
 }

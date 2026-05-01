@@ -130,7 +130,7 @@ export default function Contact() {
                   <p className="text-sm text-gray-500">For general inquiries</p>
                 </div>
               </div>
-              <a href="mailto:hello@earnwithai.com" className="text-blue-600 hover:text-blue-700 font-medium">
+              <a href="mailto:ferocious2006@gmail.com" className="text-blue-600 hover:text-blue-700 font-medium">
                 hello@earnwithai.com
               </a>
             </div>
