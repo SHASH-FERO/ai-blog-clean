@@ -145,8 +145,8 @@ export default function Contact() {
                   <p className="text-sm text-gray-500">Partnerships & sponsorships</p>
                 </div>
               </div>
-              <a href="mailto:business@earnwithai.com" className="text-blue-600 hover:text-blue-700 font-medium">
-                business@earnwithai.com
+              <a href="mailto:krssharma556@gmail.com" className="text-blue-600 hover:text-blue-700 font-medium">
+                krssharma556@gmail.com
               </a>
             </div>
 
