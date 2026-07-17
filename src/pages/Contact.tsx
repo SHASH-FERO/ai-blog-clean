@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from "@emailjs/browser";
 import { Mail, MessageSquare, Send, CheckCircle, MapPin, Clock } from 'lucide-react';
 
 export default function Contact() {
@@ -10,14 +11,47 @@ export default function Contact() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    await emailjs.send(
+  "service_u4whxsf",
+  "template_jdy25sc",
+      {
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      },
+      "YyX7_8XRgEuVMHTBY"
+    );
+
     setSubmitted(true);
+
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+
     setTimeout(() => {
       setSubmitted(false);
-      setFormData({ name: '', email: '', subject: '', message: '' });
     }, 3000);
-  };
+  } catch (error: any) {
+  console.error("EmailJS Error:", error);
+
+  if (error?.text) {
+    alert(error.text);
+  } else if (error?.message) {
+    alert(error.message);
+  } else {
+    alert(JSON.stringify(error));
+  }
+}
+};
+  
 
   return (
     <div className="min-h-screen pt-24 pb-16">
@@ -50,10 +84,11 @@ export default function Contact() {
                     </label>
                     <input
                       type="text"
-                      id="name"
-                      required
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+  id="name"
+  name="name"
+  required
+  value={formData.name}
+  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       className="w-full px-4 py-2.5 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       placeholder="John Doe"
                     />
@@ -64,10 +99,11 @@ export default function Contact() {
                     </label>
                     <input
                       type="email"
-                      id="email"
-                      required
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+  id="email"
+  name="email"
+  required
+  value={formData.email}
+  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className="w-full px-4 py-2.5 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       placeholder="john@example.com"
                     />
@@ -79,9 +115,10 @@ export default function Contact() {
                   </label>
                   <select
                     id="subject"
-                    required
-                    value={formData.subject}
-                    onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+  name="subject"
+  required
+  value={formData.subject}
+  onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                     className="w-full px-4 py-2.5 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
                   >
                     <option value="">Select a topic</option>
@@ -99,10 +136,11 @@ export default function Contact() {
                   </label>
                   <textarea
                     id="message"
-                    required
-                    rows={5}
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+  name="message"
+  required
+  rows={5}
+  value={formData.message}
+  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full px-4 py-2.5 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
                     placeholder="Tell us how we can help you..."
                   />
