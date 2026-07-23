@@ -108,30 +108,35 @@ export default function Header() {
                     autoFocus
                   />
                   <button
-                    type="button"
-                    onClick={() => setSearchOpen(false)}
-                    className="ml-2 p-1.5 text-gray-400 hover:text-gray-600"
-                  >
-                    <X className="w-4 h-4" />
-                  </button>
+  type="button"
+  aria-label="Close search"
+  onClick={() => setSearchOpen(false)}
+  className="ml-2 p-1.5 text-gray-400 hover:text-gray-600"
+>
+  <X className="w-5 h-5" />
+</button>
                 </form>
               ) : (
                 <button
-                  onClick={() => setSearchOpen(true)}
-                  className="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
-                >
-                  <Search className="w-5 h-5" />
-                </button>
+  type="button"
+  aria-label="Open search"
+  onClick={() => setSearchOpen(true)}
+  className="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+>
+  <Search className="w-5 h-5" />
+</button>
               )}
             </div>
 
             {/* Mobile menu button */}
             <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
-            >
-              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-            </button>
+  type="button"
+  aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+  onClick={() => setIsOpen(!isOpen)}
+  className="lg:hidden p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+>
+  {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+</button>
           </div>
         </div>
       </div>

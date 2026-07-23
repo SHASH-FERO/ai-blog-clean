@@ -23,18 +23,41 @@ export default function Footer() {
               Your ultimate resource for AI tools, online earning strategies, and digital growth. Helping beginners build real income online.
             </p>
             <div className="flex gap-3">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors">
-                <Twitter className="w-4 h-4" />
-              </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors">
-                <Youtube className="w-4 h-4" />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors">
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a href="mailto:ferocious2006@gmai.com" className="p-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors">
-                <Mail className="w-4 h-4" />
-              </a>
+              <a
+  href="https://twitter.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Twitter"
+  className="p-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors"
+>
+  <Twitter className="w-4 h-4" />
+</a>
+              <a
+  href="https://youtube.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="YouTube"
+  className="p-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors"
+>
+  <Youtube className="w-4 h-4" />
+</a>
+
+              <a
+  href="https://instagram.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Instagram"
+  className="p-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors"
+>
+  <Instagram className="w-4 h-4" />
+</a>
+              <a
+  href="mailto:ferocious2006@gmail.com"
+  aria-label="Email"
+  className="p-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors"
+>
+  <Mail className="w-4 h-4" />
+</a>
             </div>
           </div>
 
