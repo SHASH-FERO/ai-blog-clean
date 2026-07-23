@@ -19,6 +19,7 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
             <img
               src={post.image}
               alt={post.imageAlt}
+              loading="lazy"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               
             />
@@ -61,6 +62,7 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
         <img
           src={post.image}
           alt={post.imageAlt}
+          loading="lazy"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           
         />
